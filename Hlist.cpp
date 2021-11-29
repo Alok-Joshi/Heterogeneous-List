@@ -13,11 +13,7 @@ class Node
         next = NULL;
         previous = NULL;
     }
-    any get_data()
-    {
-        return data;
-    }
-
+    
     void print_node()
      {
         if(data.type() == typeid(double))
@@ -50,6 +46,9 @@ class Node
             cout<<any_cast<const char*>(data);
         }
      }
+
+     
+     
   
 };
 
@@ -99,7 +98,6 @@ class List
              head = new Node(data);
              tail = head;
              
-             return;
          }
          else
          {
@@ -178,6 +176,29 @@ class List
          
          size--;
      }
+     any get(int index)
+     {
+         if(index>=size || index<0)
+         {
+             return "bad input";
+             //throw exception
+         }
+         else
+         {
+              Node* temp = head;
+              
+              int i = 0;
+              while(i<index)
+              {
+                  temp = temp->next;
+                  i++;
+              }
+
+              return temp->data; 
+              
+         }
+     }
+
 
 };
 
