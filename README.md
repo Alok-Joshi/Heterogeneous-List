@@ -1,2 +1,3 @@
 # Heterogeneous-List
-A class for a Heterogenous List written in C++.
+A Heterogenous List class written in C++
+
