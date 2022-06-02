@@ -1,7 +1,6 @@
 #include<iostream>
 using namespace std;
 int main(){
-  cout<<"new Demo File"<<endl;
-  cout<<"New user made changes"<<'\n';
+  cout<<"this is the new demo file"<<endl;
   return 0;
 }
