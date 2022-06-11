@@ -2,6 +2,7 @@
 #include "Hlist.cpp"
 int main()
 {
-    cout<<"Hello, this is a  demo file"<<endl;
+    cout<<"Hello World"<<endl;
+    return 0;
     
 }
